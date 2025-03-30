@@ -1,0 +1,629 @@
+/* Clients Page Styles */
+
+/* Header styles (same as about-us page) */
+.header-white {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: rgba(26, 43, 60, 0.2); /* Slightly visible dark background */
+    padding: 10px 0;
+}
+
+/* Scrolled header styles */
+.header-white.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+
+/* Navigation links - light color for transparent header */
+.header-white .nav-link {
+    color: white; /* Pure white for better visibility */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Navigation links - dark color for white header when scrolled */
+.header-white.scrolled .nav-link {
+    color: var(--primary-color);
+}
+
+.header-white .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.header-white .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.header-white.scrolled .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* Logo styles */
+.header-white .logo {
+    filter: brightness(0) invert(1); /* Make logo white */
+    max-height: 70px;
+    width: auto; /* Allow width to adjust based on height */
+    max-width: 200px; /* Increase max-width */
+    transition: all 0.3s ease;
+}
+
+/* Logo styles when scrolled */
+.header-white.scrolled .logo {
+    filter: none; /* Original logo colors */
+    max-height: 60px;
+    max-width: 180px; /* Slightly smaller when scrolled */
+}
+
+/* Logo container styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 80px; /* Set a fixed height for the container */
+}
+
+.header-white.scrolled .logo-container {
+    height: 70px; /* Slightly smaller when scrolled */
+}
+
+/* Mobile menu button - updated for better appearance */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-menu-btn i {
+    font-size: 1.2rem;
+}
+
+.mobile-menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-white.scrolled .mobile-menu-btn {
+    color: var(--primary-color);
+}
+
+.header-white.scrolled .mobile-menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure mobile menu button is visible on smaller screens */
+@media (max-width: 992px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+}
+
+/* Mobile Menu Styles - updated for better appearance */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    z-index: 1002;
+    padding: 80px 30px 30px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+    transform: rotate(90deg);
+}
+
+.mobile-menu .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-menu .nav-item {
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu .nav-link:hover,
+.mobile-menu .nav-link.active {
+    color: var(--secondary-color);
+    padding-left: 10px;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Clients Hero Section */
+.clients-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-top: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.clients-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('clients-hero.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 0.2; /* Make image more subtle */
+}
+
+.clients-hero-overlay {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    padding-top: 100px; /* Add padding to account for fixed header */
+}
+
+.clients-hero-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.clients-hero-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-light);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    z-index: 3;
+}
+
+/* Clients Introduction Section */
+.clients-intro {
+    padding: 60px 0 30px;
+    text-align: center;
+    background-color: var(--bg-light);
+}
+
+.clients-intro .section-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.clients-intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Clients Grid Section */
+.clients-grid-section {
+    padding: 40px 0 80px;
+    background-color: var(--bg-light);
+}
+
+.clients-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.client-card {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Single, lighter shadow */
+    transition: all 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Slightly stronger but still single shadow */
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.clients-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.testimonials-section .section-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.testimonials-slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 800px;
+    display: none;
+    box-shadow: none; /* Remove shadow completely for testimonial cards */
+}
+
+.testimonial-card.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonial-content {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial-content p {
+    position: relative;
+}
+
+.testimonial-content p::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    color: var(--secondary-color);
+    opacity: 0.3;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 3px solid var(--secondary-color);
+}
+
+.testimonial-author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-author-info {
+    text-align: left;
+}
+
+.testimonial-author-info h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.testimonial-author-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.testimonial-prev,
+.testimonial-next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.testimonial-dots {
+    display: flex;
+    margin: 0 20px;
+}
+
+.testimonial-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimonial-dot.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+/* Remove any background effects that might cause shadow-like appearance */
+.testimonial-card::before,
+.testimonial-card::after {
+    display: none;
+}
+
+/* CTA Section */
+.clients-cta {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.clients-cta h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.clients-cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .clients-hero {
+        height: 50vh;
+    }
+    
+    .clients-hero-title {
+        font-size: 3rem;
+    }
+    
+    .clients-intro .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .clients-intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .client-card {
+        min-width: 180px;
+        max-width: 220px;
+        height: 100px;
+    }
+    
+    .testimonial-content {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-hero {
+        height: 40vh;
+    }
+    
+    .clients-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .clients-intro .section-title {
+        font-size: 2rem;
+    }
+    
+    .clients-row {
+        justify-content: center;
+    }
+    
+    .client-card {
+        min-width: 150px;
+        max-width: 180px;
+        height: 90px;
+        margin: 10px;
+    }
+    
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    
+    .testimonial-content {
+        font-size: 1.1rem;
+    }
+    
+    .clients-cta h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients-hero {
+        height: 30vh;
+    }
+    
+    .clients-hero-title {
+        font-size: 2rem;
+    }
+    
+    .clients-intro {
+        padding: 40px 0 20px;
+    }
+    
+    .clients-intro .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .clients-intro-text {
+        font-size: 1rem;
+    }
+    
+    .client-card {
+        min-width: 130px;
+        max-width: 150px;
+        height: 80px;
+        margin: 8px;
+    }
+    
+    .testimonial-content {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-author-info h4 {
+        font-size: 1rem;
+    }
+    
+    .clients-cta {
+        padding: 60px 0;
+    }
+    
+    .clients-cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .clients-cta p {
+        font-size: 1rem;
+    }
+} 
