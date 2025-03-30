@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - ZEMTECK ELECTROMECHANICAL LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as about-us page) -->
+    <header class="header header-white">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="ZEMTECK Logo" class="logo">
+                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                        <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="projects-hero-image"></div>
+        <div class="projects-hero-overlay">
+            <div class="container">
+                <h1 class="projects-hero-title">Projects</h1>
+            </div>
+        </div>
+        <div class="projects-hero-divider"></div>
+    </section>
+    
+    <!-- Projects Introduction Section -->
+    <section class="projects-intro">
+        <div class="container">
+            <p class="projects-intro-text">We deliver innovative, reliable, and timely solutions that exceed client expectations.</p>
+        </div>
+    </section>
+    
+    <!-- Projects Filter Section -->
+    <section class="projects-filter-section">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="food">
+                    <i class="fas fa-utensils"></i> Food & Beverage
+                </button>
+                <button class="filter-btn" data-filter="fitness">
+                    <i class="fas fa-dumbbell"></i> Fit Out
+                </button>
+                <button class="filter-btn" data-filter="commercial">
+                    <i class="fas fa-building"></i> Commercial
+                </button>
+                <button class="filter-btn" data-filter="industrial">
+                    <i class="fas fa-industry"></i> Industrial
+                </button>
+                <button class="filter-btn" data-filter="residential">
+                    <i class="fas fa-home"></i> Residential
+                </button>
+                <button class="filter-btn" data-filter="expo">
+                    <i class="fas fa-landmark"></i> Expo
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Grid Section with Enhanced Animations -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- First row with fade-in -->
+                <div class="project-card animate-on-scroll fade-in delay-100" data-category="food">
+                    <button class="project-close-expanded">&times;</button>
+                    <div class="project-image">
+                        <img src="images/Emporio Armani Cafe.jpg" alt="Emporio Armani Cafe">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info-text">
+                            <h3 class="project-title">Emporio Armani Cafe</h3>
+                            <p class="project-location">Sowwah Square, Abu Dhabi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-expanded-details">
+                        <div class="project-expanded-details-inner">
+                            <div class="project-description">
+                                <h4>Project Overview</h4>
+                                <p>The Emporio Armani Cafe project involved the complete MEP design and installation for this high-end dining establishment. Our team was responsible for creating a sophisticated environment that matched the Armani brand's luxury aesthetic while ensuring optimal functionality.</p>
+                                <p>The project included state-of-the-art kitchen facilities, custom lighting design, and advanced climate control systems to ensure guest comfort in all seasons.</p>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul class="project-features-list">
+                                    <li>Custom-designed HVAC system with zoned temperature control</li>
+                                    <li>Energy-efficient LED lighting with programmable scenes</li>
+                                    <li>Commercial kitchen ventilation and fire suppression systems</li>
+                                    <li>Building management system integration for centralized control</li>
+                                    <li>Water-efficient plumbing fixtures and systems</li>
+                                    <li>Backup power systems for critical operations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second row with slide-left -->
+                <div class="project-card animate-on-scroll slide-left delay-200" data-category="food">
+                    <div class="project-image">
+                        <img src="images/Broadway Restaurant.jpg" alt="Broadway Restaurant">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Broadway Restaurant</h3>
+                        <p class="project-location">Abu Dhabi, UAE</p>
+                    </div>
+                </div>
+                
+                <!-- Third row with slide-right -->
+                <div class="project-card animate-on-scroll slide-right delay-300" data-category="food">
+                    <div class="project-image">
+                        <img src="images/Irish Village.jpg" alt="Irish Village">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Irish Village</h3>
+                        <p class="project-location">Dubai, UAE</p>
+                    </div>
+                </div>
+                
+                <!-- Fourth row with zoom-in -->
+                <div class="project-card animate-on-scroll zoom-in delay-200" data-category="commercial">
+                    <div class="project-image">
+                        <img src="images/Luxury Retail Store.jpg" alt="Luxury Retail Store">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Luxury Retail Store</h3>
+                        <p class="project-location">Dubai Mall, UAE</p>
+                    </div>
+                </div>
+                
+                <!-- Fifth row with fade-in -->
+                <div class="project-card animate-on-scroll fade-in delay-300" data-category="industrial">
+                    <div class="project-image">
+                        <img src="images/Manufacturing Facility.jpg" alt="Manufacturing Facility">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Manufacturing Facility</h3>
+                        <p class="project-location">Industrial Area, Sharjah</p>
+                    </div>
+                </div>
+                
+                <!-- Sixth row with slide-left -->
+                <div class="project-card animate-on-scroll slide-left delay-400" data-category="residential">
+                    <div class="project-image">
+                        <img src="images/Luxury Apartment Complex.jpg" alt="Luxury Apartment Complex">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Luxury Apartment Complex</h3>
+                        <p class="project-location">Palm Jumeirah, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Seventh row with slide-right -->
+                <div class="project-card animate-on-scroll slide-right delay-200" data-category="fitness">
+                    <div class="project-image">
+                        <img src="images/Elite Fitness Center.jpg" alt="Fitness Center">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Elite Fitness Center</h3>
+                        <p class="project-location">Business Bay, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Eighth row with zoom-in -->
+                <div class="project-card animate-on-scroll zoom-in delay-300" data-category="commercial">
+                    <div class="project-image">
+                        <img src="images/Corporate Headquarters.jpg" alt="Commercial Office">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Corporate Headquarters</h3>
+                        <p class="project-location">DIFC, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Ninth row with fade-in -->
+                <div class="project-card animate-on-scroll fade-in delay-400" data-category="residential">
+                    <div class="project-image">
+                        <img src="images/Luxury Villa.jpg" alt="Residential Villa">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Luxury Villa</h3>
+                        <p class="project-location">Emirates Hills, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Tenth row with slide-left -->
+                <div class="project-card animate-on-scroll slide-left delay-300" data-category="expo">
+                    <div class="project-image">
+                        <img src="images/Innovation Pavilion.jpg" alt="Expo Pavilion">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Innovation Pavilion</h3>
+                        <p class="project-location">Expo 2020, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Eleventh row with slide-right -->
+                <div class="project-card animate-on-scroll slide-right delay-400" data-category="industrial">
+                    <div class="project-image">
+                        <img src="images/Logistics Warehouse.jpg" alt="Industrial Warehouse">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Logistics Warehouse</h3>
+                        <p class="project-location">Jebel Ali, Dubai</p>
+                    </div>
+                </div>
+                
+                <!-- Twelfth row with zoom-in -->
+                <div class="project-card animate-on-scroll zoom-in delay-200" data-category="food">
+                    <div class="project-image">
+                        <img src="images/Fine Dining Restaurant.jpg" alt="Fine Dining Restaurant">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fine Dining Restaurant</h3>
+                        <p class="project-location">Jumeirah Beach, Dubai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer (same as about-us page) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">About Us</h3>
+                    <p>ZEMTECH ELECTROMECHANICAL LLC provides quality electromechanical solutions for various industries.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Office Number 805, Centurion Star Building, Block B,
+                            Deira Dubai</li>
+                        <li><i class="fas fa-phone"></i> +971-55-1911760</li>
+                        <li><i class="fas fa-envelope"></i> info@zemtech.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ZEMTECH ELECTROMECHANICAL LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Project Details Modal - Updated without images -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Project Details</h2>
+            </div>
+            <div class="modal-body">
+                <div class="project-details">
+                    <h3 class="project-detail-title"></h3>
+                    <p class="project-detail-location"><i class="fas fa-map-marker-alt"></i> <span></span></p>
+                    <div class="project-detail-info">
+                        <div class="detail-item">
+                            <h4>Client</h4>
+                            <p class="project-client"></p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Completion Date</h4>
+                            <p class="project-date"></p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Project Value</h4>
+                            <p class="project-value"></p>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p class="project-desc-text"></p>
+                    </div>
+                    <div class="project-scope">
+                        <h4>Scope of Work</h4>
+                        <ul class="project-scope-list">
+                            <!-- Scope items will be added dynamically -->
+                        </ul>
+                    </div>
+                    <div class="project-cta">
+                        <a href="contact-us.html" class="btn-primary">Discuss a Similar Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll behavior
+            const header = document.querySelector('.header-white');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Back to top button functionality
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Mobile menu functionality
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+            mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            
+            // Project filtering functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Set "All Projects" as active by default
+            document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'flex';
+                            // Reset any expanded cards when filtering
+                            card.classList.remove('expanded');
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Project card expansion functionality - Optimized
+            const projectLinks = document.querySelectorAll('.project-link');
+            const closeButtons = document.querySelectorAll('.project-close-expanded');
+            
+            // Function to handle card expansion with performance optimizations
+            function toggleCardExpansion(card, forceExpand = false) {
+                // Check if we're forcing expansion or toggling
+                const shouldExpand = forceExpand || !card.classList.contains('expanded');
+                
+                // If we're expanding this card, close any others first
+                if (shouldExpand) {
+                    // Use a more efficient selector
+                    const expandedCards = document.querySelectorAll('.project-card.expanded');
+                    for (let i = 0; i < expandedCards.length; i++) {
+                        if (expandedCards[i] !== card) {
+                            expandedCards[i].classList.remove('expanded');
+                        }
+                    }
+                    
+                    // Add expanded class
+                    card.classList.add('expanded');
+                    
+                    // Scroll to the expanded card with a small delay
+                    setTimeout(() => {
+                        // Use a more performant scrolling approach
+                        const rect = card.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        const targetY = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
+                        
+                        window.scrollTo({
+                            top: targetY,
+                            behavior: 'smooth'
+                        });
+                    }, 50);
+                } else {
+                    // Just remove the expanded class
+                    card.classList.remove('expanded');
+                }
+            }
+            
+            // Add click event to View Details links - with debounce to prevent multiple clicks
+            let isProcessingClick = false;
+            
+            projectLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Prevent multiple rapid clicks
+                    if (isProcessingClick) return;
+                    isProcessingClick = true;
+                    
+                    const card = this.closest('.project-card');
+                    
+                    // Ensure the card has expanded details before toggling
+                    ensureExpandedDetails(card);
+                    
+                    toggleCardExpansion(card);
+                    
+                    // Reset after a short delay
+                    setTimeout(() => {
+                        isProcessingClick = false;
+                    }, 300);
+                });
+            });
+            
+            // Add click event to close buttons
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const card = this.closest('.project-card');
+                    card.classList.remove('expanded');
+                });
+            });
+            
+            // Function to ensure a card has expanded details
+            function ensureExpandedDetails(card) {
+                // Skip if the card already has expanded details
+                if (card.querySelector('.project-expanded-details')) return;
+                
+                // Add close button if missing
+                if (!card.querySelector('.project-close-expanded')) {
+                    const closeBtn = document.createElement('button');
+                    closeBtn.className = 'project-close-expanded';
+                    closeBtn.innerHTML = '&times;';
+                    closeBtn.addEventListener('click', function() {
+                        card.classList.remove('expanded');
+                    });
+                    card.prepend(closeBtn);
+                }
+                
+                // Wrap project info content if needed
+                const projectInfo = card.querySelector('.project-info');
+                let projectInfoText = projectInfo.querySelector('.project-info-text');
+                
+                if (!projectInfoText) {
+                    const title = projectInfo.querySelector('.project-title');
+                    const location = projectInfo.querySelector('.project-location');
+                    
+                    if (title && location) {
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'project-info-text';
+                        
+                        // Clone the elements to avoid removing them from the DOM
+                        wrapper.appendChild(title.cloneNode(true));
+                        wrapper.appendChild(location.cloneNode(true));
+                        
+                        // Clear and append wrapper
+                        projectInfo.innerHTML = '';
+                        projectInfo.appendChild(wrapper);
+                    }
+                }
+                
+                // Get project details
+                const projectTitle = card.querySelector('.project-title').textContent;
+                const projectLocation = card.querySelector('.project-location').textContent;
+                
+                // Create expanded details
+                const expandedDetails = document.createElement('div');
+                expandedDetails.className = 'project-expanded-details';
+                expandedDetails.innerHTML = `
+                    <div class="project-expanded-details-inner">
+                        <div class="project-description">
+                            <h4>Project Overview</h4>
+                            <p>${projectTitle} was a comprehensive MEP project located in ${projectLocation}. Our team delivered high-quality electromechanical solutions tailored to the specific requirements of this project.</p>
+                            <p>The scope included electrical systems, HVAC, plumbing, and fire protection systems, all designed and installed to meet international standards and local regulations.</p>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul class="project-features-list">
+                                <li>Complete electrical design and installation</li>
+                                <li>HVAC systems with energy-efficient components</li>
+                                <li>Advanced plumbing and drainage solutions</li>
+                                <li>Fire detection and suppression systems</li>
+                                <li>Building management system integration</li>
+                                <li>Sustainable design elements</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+                
+                // Append expanded details to the card
+                card.appendChild(expandedDetails);
+            }
+            
+            // Initialize all cards with expanded details
+            projectCards.forEach(card => {
+                ensureExpandedDetails(card);
+            });
+            
+            // Check for query parameter to open specific project
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectParam = urlParams.get('project');
+            
+            if (projectParam) {
+                // Find the matching project card more efficiently
+                let matchingCard = null;
+                
+                for (let i = 0; i < projectCards.length; i++) {
+                    const cardTitle = projectCards[i].querySelector('.project-title').textContent.toLowerCase();
+                    const paramLower = projectParam.toLowerCase();
+                    
+                    if (cardTitle === paramLower || cardTitle.includes(paramLower)) {
+                        matchingCard = projectCards[i];
+                        break; // Exit loop once found
+                    }
+                }
+                
+                // If found, expand the card
+                if (matchingCard) {
+                    // Ensure the card has expanded details
+                    ensureExpandedDetails(matchingCard);
+                    
+                    // Delay to ensure page is fully loaded
+                    setTimeout(() => {
+                        toggleCardExpansion(matchingCard, true);
+                    }, 500);
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ZEMTECK ELECTROMECHANICAL LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google reCAPTCHA v2 Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <!-- Add these scripts in the head section, before your existing scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/form-handler.js"></script>
+</head>
+<body>
+    <!-- Header (same as about-us page) -->
+    <header class="header header-white">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="ZEMTECK Logo" class="logo">
+                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link active">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-image"></div>
+        <div class="contact-hero-overlay">
+            <div class="container">
+                <h1 class="contact-hero-title">Contact Us</h1>
+            </div>
+        </div>
+        <div class="contact-hero-divider"></div>
+    </section>
+    
+    <!-- Contact Introduction Section -->
+    <section class="contact-intro">
+        <div class="container">
+            <h2 class="section-title">Get In Touch With Us</h2>
+            <div class="contact-intro-text">
+                <p>We are ensuring the highest standards of service and professionalism. Whether you're looking for a trusted partner for your project or have inquiries about our services, we're here to help.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card animate-on-scroll fade-in delay-100">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+971-55-1911760</p>
+                </div>
+                
+                <!-- <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Fax</h3>
+                    <p>+971 (0) 4 272 1362</p>
+                </div> -->
+                
+                <div class="contact-info-card animate-on-scroll fade-in delay-200">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@zemteck.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="contact-form-left animate-on-scroll slide-left">
+                    <h2>Send Us A Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group recaptcha-container">
+                            <div class="g-recaptcha" data-sitekey="6LcY9_oqAAAAAAkHjr2tXxNU1xwWDNZvp4J15Pmx"></div>
+                            <div class="recaptcha-note">
+                                <small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-form-right animate-on-scroll slide-right">
+                    <h2>Our Location</h2>
+                    <div class="contact-map">
+                        <!-- Replace with your Google Maps embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.5261088231366!2d55.3053!3d25.2697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE2JzEwLjkiTiA1NcKwMTgnMTkuMSJF!5e0!3m2!1sen!2sae!4v1635789012345!5m2!1sen!2sae" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    <div class="contact-address">
+                        <h3>Office Address</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Office Number 805, Centurion Star Building, Block B,
+                            Deira Dubai</p>
+                        <p><i class="far fa-clock"></i> Working Hours: Sunday - Thursday, 8:30 AM - 5:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer (same as about-us page) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">About Us</h3>
+                    <p>ZEMTECH ELECTROMECHANICAL LLC provides quality electromechanical solutions for various industries.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Office Number 805, Centurion Star Building, Block B,
+                            Deira Dubai</li>
+                        <li><i class="fas fa-phone"></i> +971-55-1911760</li>
+                        <li><i class="fas fa-envelope"></i> info@zemtech.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ZEMTECH ELECTROMECHANICAL LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll behavior
+            const header = document.querySelector('.header-white');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Back to top button functionality
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Mobile menu functionality
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+            mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            
+            // Contact form submission with reCAPTCHA validation
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // Get form data
+                    const name = this.name.value;
+                    const email = this.email.value;
+                    const phone = this.phone.value;
+                    const subject = this.subject.value;
+                    const message = this.message.value;
+                    
+                    // Verify reCAPTCHA
+                    const recaptchaResponse = grecaptcha.getResponse();
+                    if (!recaptchaResponse) {
+                        alert('Please complete the reCAPTCHA verification.');
+                        return;
+                    }
+                    
+                    // Show loading state
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    
+                    // Construct the mailto URL
+                    const mailtoUrl = `mailto:info@zemteck.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`)}`;
+                    
+                    // Open the user's email client
+                    window.location.href = mailtoUrl;
+                    
+                    // Show success message
+                    setTimeout(() => {
+                        alert('Thank you for your message! Your default email client has been opened with your message details.');
+                        
+                        // Reset the form
+                        this.reset();
+                        grecaptcha.reset();
+                        
+                        // Reset button state
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = 'Send Message';
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
